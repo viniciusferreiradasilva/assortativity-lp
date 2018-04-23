@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8c44327-1010-4289-b3e6-a3dffbcc6e1e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/assortativity-lp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assortativity-lp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regular_experiments.sh" beforeDir="false" afterPath="$PROJECT_DIR$/regular_experiments.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/similarity/similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity/similarity.py" afterDir="false" />
     </list>
@@ -26,20 +23,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regular_experiments.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="regular_experiments.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/regular_experiments.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="495">
+              <caret line="33" lean-forward="true" selection-start-line="27" selection-end-line="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="similarity.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="similarity.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/similarity/similarity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+            <state relative-caret-position="225">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="e#46#77#0" expanded="true" />
               </folding>
@@ -56,8 +53,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/coarsening_main.py" />
-        <option value="$PROJECT_DIR$/regular_experiments.sh" />
         <option value="$PROJECT_DIR$/similarity/similarity.py" />
+        <option value="$PROJECT_DIR$/regular_experiments.sh" />
       </list>
     </option>
   </component>
@@ -242,20 +239,20 @@
     <entry file="file://$PROJECT_DIR$/similarity/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/regular_experiments.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/similarity/similarity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        <state relative-caret-position="225">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="e#46#77#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regular_experiments.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="27" selection-end-line="33" />
         </state>
       </provider>
     </entry>

@@ -12,7 +12,7 @@ FILES=(
 "datasets/gml/hep-th/hep-th.gml"
 )
 
-SIMILARITIES=("5" "6" "7" "8" "9")
+SIMILARITIES=("3" "4" "5" "6" "8")
 cont=1
 from=1
 to=100
@@ -24,7 +24,7 @@ do
     do
         if [[ "$cont" -ge "$from" && "$cont" -le "$to" ]]
         then
-            echo "Executando $cont de $((${#FILES[@]} * ${#SIMILARITIES[@]})): python coarsening_main.py -f ${FILES[$f]} -s ${SIMILARITIES[$i]}"
+            echo "Executing $cont to $((${#FILES[@]} * ${#SIMILARITIES[@]})): python coarsening_main.py -f ${FILES[$f]} -s ${SIMILARITIES[$i]}"
             if [ "$MAX_THREADS" = 1 ]
             then
                 python coarsening_main.py -f ${FILES[$f]} -k 10 -s ${SIMILARITIES[$i]}
