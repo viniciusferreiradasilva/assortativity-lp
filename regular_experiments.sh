@@ -12,7 +12,7 @@ FILES=(
 "datasets/gml/hep-th/hep-th.gml"
 )
 
-SIMILARITIES=("6")
+SIMILARITIES=("5" "6" "7" "8" "9")
 cont=1
 from=1
 to=100
