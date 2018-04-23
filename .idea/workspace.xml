@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8c44327-1010-4289-b3e6-a3dffbcc6e1e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/regular_experiments.sh" beforeDir="false" afterPath="$PROJECT_DIR$/regular_experiments.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/similarity/similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity/similarity.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,13 +16,13 @@
       <file leaf-file-name="coarsening_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coarsening_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="534">
+              <caret line="85" column="107" lean-forward="true" selection-start-line="85" selection-start-column="107" selection-end-line="85" selection-end-column="107" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regular_experiments.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="regular_experiments.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/regular_experiments.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
@@ -32,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="similarity.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="similarity.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/similarity/similarity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="354">
+              <caret line="62" column="56" lean-forward="true" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
               <folding>
                 <element signature="e#46#77#0" expanded="true" />
               </folding>
@@ -46,6 +45,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>self.ad</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -53,8 +57,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/coarsening_main.py" />
-        <option value="$PROJECT_DIR$/similarity/similarity.py" />
         <option value="$PROJECT_DIR$/regular_experiments.sh" />
+        <option value="$PROJECT_DIR$/similarity/similarity.py" />
       </list>
     </option>
   </component>
@@ -229,30 +233,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coarsening_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/similarity/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity/similarity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="e#46#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/regular_experiments.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" lean-forward="true" selection-start-line="27" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coarsening_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="85" column="107" lean-forward="true" selection-start-line="85" selection-start-column="107" selection-end-line="85" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity/similarity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="62" column="56" lean-forward="true" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+          <folding>
+            <element signature="e#46#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

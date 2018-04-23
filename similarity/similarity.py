@@ -16,10 +16,10 @@ class Similarity():
         self.katz_beta = None
         self.last_i = -1
         # Array that contains all the available similarities measures implemented in this class.
-        self.similarities_array = {self.common_neighbors, self.jaccard_index, self.salton_index, self.sorensen_index,
+        self.similarities_array = [self.common_neighbors, self.jaccard_index, self.salton_index, self.sorensen_index,
                                    self.leicht_holme_newman, self.hub_promoted, self.hub_depressed,
                                    self.preferential_attachment, self.resource_allocation, self.adamic_adar,
-                                   self.lowmem_katz_index}
+                                   self.lowmem_katz_index]
 
     ############################
     # Local Similarity Indices #
@@ -48,35 +48,35 @@ class Similarity():
         return isect / math.sqrt(product)
 
     # Implementation of sorensen similarity index for link prediction.
-    def sorensen_index(self, i, j):
-        _sum = float(self.graph.degree(i)) * float(self.graph.degree(j))
+    def sorensen_index(self, graph, adjlist, i, j):
+        _sum = float(graph.degree(i)) * float(graph.degree(j))
         if _sum == 0.0:
             return 0.0
-        isect = 2 * len(self.adjlist[i].intersection(self.adjlist[j]))
+        isect = 2 * len(adjlist[i].intersection(adjlist[j]))
         return isect / _sum
 
     # Implementation of hub depressed similarity index for link prediction.
-    def leicht_holme_newman(self, i, j):
-        product = float(self.graph.degree(i)) * float(self.graph.degree(j))
+    def leicht_holme_newman(self, graph, adjlist, i, j):
+        product = float(graph.degree(i)) * float(graph.degree(j))
         if product == 0.0:
             return 0.0
-        isect = len(self.adjlist[i].intersection(self.adjlist[j]))
+        isect = len(adjlist[i].intersection(adjlist[j]))
         return isect / product
 
     # Implementation of hub promoted similarity index for link prediction.
-    def hub_promoted(self, i, j):
-        minimum = min(float(self.graph.degree(i)), float(self.graph.degree(j)))
+    def hub_promoted(self, graph, adjlist, i, j):
+        minimum = min(float(graph.degree(i)), float(graph.degree(j)))
         if minimum == 0.0:
             return 0.0
-        isect = len(self.adjlist[i].intersection(self.adjlist[j]))
+        isect = len(adjlist[i].intersection(adjlist[j]))
         return isect / minimum
 
     # Implementation of hub depressed similarity index for link prediction.
-    def hub_depressed(self, i, j):
-        maximum = max(float(self.graph.degree(i)), float(self.graph.degree(j)))
+    def hub_depressed(self, graph, adjlist, i, j):
+        maximum = max(float(graph.degree(i)), float(graph.degree(j)))
         if maximum == 0.0:
             return 0.0
-        isect = len(self.adjlist[i].intersection(self.adjlist[j]))
+        isect = len(adjlist[i].intersection(adjlist[j]))
         return isect / maximum
 
     # Implementation of preferential attachment similarity index for link prediction.
@@ -84,10 +84,10 @@ class Similarity():
         return graph.degree(i) * graph.degree(j)
 
     # Implementation of resource allocation similarity index for link prediction.
-    def resource_allocation(self, i, j):
+    def resource_allocation(self, graph, adjlist, i, j):
         score = 0.0
-        for isect in self.adjlist[i].intersection(self.adjlist[j]):
-            degree = self.graph.degree(isect)
+        for isect in adjlist[i].intersection(adjlist[j]):
+            degree = graph.degree(isect)
             if degree != 0:
                 score += 1 / degree
         return score
