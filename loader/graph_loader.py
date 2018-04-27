@@ -39,6 +39,7 @@ class GraphLoader():
         graph = self.remove_self_edges(graph)
         return graph
 
+    # Method that removes self edges in the network.
     def remove_self_edges(self, graph):
         graph.delete_edges([edge for edge in graph.es if (edge.source == edge.target)])
         return graph

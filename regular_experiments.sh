@@ -3,16 +3,12 @@ MAX_THREADS=1
 
 # Datasets
 FILES=(
-"datasets/gml/dolphins/dolphins.gml"
-"datasets/pajek/yeast/YeastL.net"
-"datasets/ncol/netscience/netscience.ncol"
-"datasets/ncol/facebook/facebook.ncol"
-"datasets/ncol/geom/geom.ncol"
-"datasets/ncol/power/power.ncol"
-"datasets/gml/hep-th/hep-th.gml"
+"datasets/ncol/astro-ph/astro-ph.ncol"
+"datasets/gml/as-22july06/as-22july06.gml"
+"datasets/ncol/condmat/condmat.ncol"
 )
 
-SIMILARITIES=("3" "4" "5" "6" "8")
+SIMILARITIES=("0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
 cont=1
 from=1
 to=100
@@ -24,12 +20,12 @@ do
     do
         if [[ "$cont" -ge "$from" && "$cont" -le "$to" ]]
         then
-            echo "Executing $cont to $((${#FILES[@]} * ${#SIMILARITIES[@]})): python coarsening_main.py -f ${FILES[$f]} -s ${SIMILARITIES[$i]}"
+            echo "Executing $cont to $((${#FILES[@]} * ${#SIMILARITIES[@]})): python main.py -f ${FILES[$f]} -s ${SIMILARITIES[$i]}"
             if [ "$MAX_THREADS" = 1 ]
             then
-                python coarsening_main.py -f ${FILES[$f]} -k 10 -s ${SIMILARITIES[$i]}
+                python main.py -f ${FILES[$f]} -k 10 -s ${SIMILARITIES[$i]}
             else
-                python coarsening_main.py -f ${FILES[$f]} -k 10 -s ${SIMILARITIES[$i]} &
+                python main.py -f ${FILES[$f]} -k 10 -s ${SIMILARITIES[$i]} &
             fi
         fi
         cont=$(($cont + 1))

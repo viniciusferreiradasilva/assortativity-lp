@@ -5,21 +5,15 @@ import numpy as np
 
 def summary(graph, complete = False, subgraph = False):
     summary = [
-        # ("level", graph['level']),
-        # ("vertex number", graph.vcount()),
-        # ("edge number", graph.ecount()),
-        # ("global transitivity", graph.transitivity_undirected()),
-        # ("vertices mean degree", np.mean(graph.degree())),
-        # ("assortativity", graph.assortativity_degree(directed=False)),
-        # ("heterogeneity", heterogeneity(graph)),
+        ("level", graph['level']),
+        ("vertex number", graph.vcount()),
+        ("edge number", graph.ecount()),
+        ("global transitivity", graph.transitivity_undirected()),
+        ("vertices mean degree", np.mean(graph.degree())),
+        ("assortativity", graph.assortativity_degree(directed=False)),
+        ("heterogeneity", heterogeneity(graph)),
         ("density", density(graph))
     ]
-    if (complete and subgraph):
-        summary.append(("vertices:", [int(graph.vs[vertex.index]["name"]) for vertex in graph.vs]))
-        summary.append(("edges:", [(int(graph.vs[edge.source]["name"]),int(graph.vs[edge.target]["name"]), graph[edge.source, edge.target]) for edge in graph.es]))
-    elif(complete and not subgraph):
-        summary.append(("vertices:", [vertex.index for vertex in graph.vs]))
-        summary.append(("edges:", [(edge.source, edge.target, graph[edge.source, edge.target]) for edge in graph.es]))
 
     print "graph summary:"
     for tuple in summary:
